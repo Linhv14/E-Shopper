@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account | E-Shopper</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reponsive.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div load-html="header.html"></div>
+
+    <button onclick="topFunction()" id="scrollTop" title="Go to top">
+        <i class="fa fa-angle-up"></i>
+    </button>
+
+    <section class="account__content">
+        <div class="account__wrap">
+            <div class="avatar">
+                <div class="circle__avt"></div>
+                <a href="#" class="change__avt">Change Avatar</a>
+            </div>
+            <div class="user__info">
+                <div class="info__title">
+                    <h3>EDIT PERSONAL DETAILS</h3>
+                </div>
+                <div class="user__title">FULL NAME:</div>
+                <input type="text" id="fullname" value="Đinh Văn Linh">
+                <div class="user__title">GENDER:</div>
+                <form class="user__gender">
+                      <input type="radio" id="male" value="male" checked>
+                      <label for="male">Male</label>
+                      <input type="radio" id="female" value="female">
+                      <label for="female">Female</label>
+                </form>
+                <div class="user__title">DATE OF BIRTHDAY:</div>
+                <input type="date" id="birthday" value="2001-01-14">
+                <div class="user__title">EMAIL:</div>
+                <input type="text" id="email" value="Linhvan@info.com">
+                <div class="user__title">ADDRESS:</div>
+                <input type="text" id="address" value="Thuan An - Binh Duong">
+                <div class="user__btn">
+                    
+                    <button class="update__proflie">Update</button>
+                </div>
+            </div>
+            <div class="user__auth">
+                <div class="auth__title">
+                    <h3>CHANGE PASSWORD</h3>
+                </div>
+                <div class="user__title">EMAIL:</div>
+                <input type="text" id="change__email" value="Linhvan@info.com">
+                <div class="user__title">NEW PASSWORD:</div>
+                <input type="password" name="password" id="password">
+                <div class="user__title">CONFIRM PASSWORD:</div>
+                <input type="password" name="confirm__password" id="confirm__password"> 
+                <button class="change__psw">Change Password</button>
+            </div>
+        </div>
+    </section>
+
+    <div load-html="footer.html"></div>
+    <script>
+        includeHTML();
+    </script>
+</body>
+</html>

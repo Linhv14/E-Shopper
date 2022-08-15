@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | E-Shopper</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reponsive.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+    <div load-html="header.html"></div>
+
+    <button onclick="topFunction()" id="scrollTop" title="Go to top">
+        <i class="fa fa-angle-up"></i>
+    </button>
+
+    <div load-html="slider.html"></div>
+
+    <div class="contact__content">
+        <div class="contact__items">
+            <div class="contact__form">
+                <div class="contact__title"><div>GET IN TOUCH</div></div>
+                <form class="form__desc" action="" method="get">
+                    <div class="form-info">
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="textbox" placeholder="Your Message Here"></textarea>
+                    <button>Submit</button>
+                </form>
+            </div>
+            <div class="contact__detail">
+                <div class="contact__info">
+                    <div class="contact__title"><div>CONTACT INFO</div></div>
+                    <ul class="info-items">
+                        <li>E-Shopper Inc.</li>
+                        <li>Binh Chuan, Thuan An, Binh Duong</li>
+                        <li>VietNam</li>
+                        <li>Phone: +84 365 700 673</li>
+                        <li>Email: info@e-shopper.com</li>
+                    </ul>
+                </div>
+                <div class="contact__social">
+                    <div class="contact__title"><div>SOCIAL NETWORKING</div></div>
+                    <ul class="social-items">
+                        <li><i class="fa fa-facebook"></i></li>
+                        <li><i class="fa fa-twitter"></i></li>
+                        <li><i class="fa fa-youtube"></i></li>
+                        <li><i class="fa fa-google-plus"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div load-html="footer.html"></div>
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>

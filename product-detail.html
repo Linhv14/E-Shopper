@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product | E-Shopper</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reponsive.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+    <div load-html="header.html"></div>
+
+    <button onclick="topFunction()" id="scrollTop" title="Go to top">
+        <i class="fa fa-angle-up"></i>
+    </button>
+
+    <div load-html="slider.html"></div>
+
+    <section class="container">
+        <div class="main__wrap">
+            <div class="main__items pull-left">
+                <div class="main__item">
+                    <div class="main-title">
+                        <h3>CATEGORY</h3>
+                    </div>
+                    <ul class="main__link top">
+                        <li class="dropdown first">
+                            <label for="ctn-input-first" class="drop__btn">
+                                <a>SPORTSWEAR</a>
+                                <i class="fa fa-plus"></i>
+                            </label>
+                            <input id="ctn-input-first" type="checkbox" name="" class="ctn__input-first">
+                            <ul class="drop__content">
+                                <li><a href="#">NIKES</a></li>
+                                <li><a href="#">ADIDAS</a></li>
+                                <li><a href="#">PUMA</a></li>
+                                <li><a href="#">ASICS</a></li>
+                                <li><a href="#">ARMOUR</a></li>
+                            </ul>                          
+                        </li>
+                        <li class="dropdown">
+                            <label for="ctn-input-second" class="drop__btn">
+                                <a>MENS</a>
+                                <i class="fa fa-plus"></i>
+                            </label>
+                            <input id="ctn-input-second" type="checkbox" name="" class="ctn__input-second">
+                            <ul class="drop__content">
+                                <li><a href="#">FENDI</a></li>
+                                <li><a href="#">GUES</a></li>
+                                <li><a href="#">DIOR</a></li>
+                                <li><a href="#">CHANEL</a></li>
+                                <li><a href="#">GUCCI</a></li>
+                                <li><a href="#">PRADA</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <label for="ctn-input-third" class="drop__btn">
+                                <a>WOMENS</a>
+                                <i class="fa fa-plus"></i>
+                            </label>
+                            <input id="ctn-input-third" type="checkbox" name="" class="ctn__input-third">
+                            <ul class="drop__content">
+                                <li><a href="#">FENDI</a></li>
+                                <li><a href="#">DIOR</a></li>
+                                <li><a href="#">CHANEL</a></li>
+                                <li><a href="#">GUCCI</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">KIDS</a></li>
+                        <li><a href="#">FASHION</a></li>
+                        <li><a href="#">HOUSEHOLDS</a></li>
+                        <li><a href="#">INTERIORS</a></li>
+                        <li><a href="#">CLOTHING</a></li>
+                        <li><a href="#">BAGS</a></li>
+                        <li><a href="#">SHOES</a></li>
+                    </ul>
+                    <ul class="main__link middle">
+                        <div class="main__title">
+                            <h3>BRANDS</h3>
+                        </div>
+                        <li class="first"><a href="#">COUPLE</a><p>(50)</p></li>
+                        <li><a href="#">ZARA</a><p>(21)</p></li>
+                        <li><a href="#">LOCAL</a><p>(28)</p></li>
+                        <li><a href="#">CREATIVE</a><p>(12)</p></li>
+                        <li><a href="#">NEU BAS</a><p>(84)</p></li>
+                        <li><a href="#">REQ</a><p>(57)</p></li>
+                        <li><a href="#">ANNA</a><p>(62)</p></li>
+                    </ul>
+                    <div class="main__link bottom">
+                        <img src="images/home/shipping.jpg" alt="shipping" title="shipping">
+                    </div>
+                </div>
+            </div>
+            <div class="main__items pull-right">
+                <div class="main__title">
+                    <h3>PRODUCT DETAIL</h3>
+                </div>
+                <div class="product__datail">
+                    <div class="pro__img">
+                        <img src="images/product/product1.jpg" alt="product">
+                    </div>
+                    <div class="pro__border"></div>
+                    <div class="pro__detail">
+                        <h3 class="pro-name push-left">Easy Polo Black Edition</h3>
+                        <div class="pro-rate push-left">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="pro-brand push-left">Brand: E-SHOPPER</div>
+                        <div class="pro-id push-left">ID: PD001</div>
+                        <div class="pro-price push-left">
+                            <p>Price: </p> 
+                            <p>$94.00</p>
+                        </div>
+                        <div class="pro-qty push-left">
+                            <button class="value-button" id="decrease" onclick="decreaseValue('qty-inp', 'qty-inp')">–</button>
+                            <input type="number" id="qty-inp" value="1" />
+                            <button class="value-button" id="increase" onclick="increaseValue('qty-inp', 'qty-inp')">+</button>
+                        </div>
+                        <div class="pro-size push-left">
+                            <h4>Size: </h4>
+                            <div class="list-size">
+                                <button class="btn-active">M</button>
+                                <button>L</button>
+                                <button>XL</button>
+                            </div>
+                        </div>
+                        <div class="pro-social push-left">
+                            <i class="fa fa-facebook-square"></i>
+                            <i class="fa fa-twitter-square"></i>
+                            <i class="fa fa-google-plus-square"></i>
+                            <i class="fa fa-pinterest-square"></i>
+                        </div>
+                        <button class="pro-btn push-left">
+                            <i class="fa fa-shopping-cart"></i>
+                            <a href="#">Add to cart</a>
+                        </button>
+                        <div class="pro-desc push-left">
+                            <h4>Description: </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro__desc">
+                    <h4>Description: </h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                </div>
+                <div class="tab__items">
+                    <div class="tab__item-btn">
+                        <button id="one" class="btn active" onclick="openTab('first-list');activeBtn('one');">T-SHIRT</button>
+                        <button id="two" class="btn" onclick="openTab('second-list');activeBtn('two');">BLAZERS</button>
+                        <button id="three" class="btn" onclick="openTab('third-list');activeBtn('three');">SUNGLASS</button>
+                        <button id="four" class="btn" onclick="openTab('fourth-list');activeBtn('four');">KIDS</button>
+                        <button id="five" class="btn" onclick="openTab('fifth-list');activeBtn('five');">POLO SHIRT</button>
+                        
+                    </div>
+                    <div class="tab__item-page">
+                        <div id="first-list" class="tab__list active">
+                            <ul class="card__items">
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product3.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product5.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product1.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product4.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product6.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product1-1.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="second-list" class="tab__list">
+                            <ul class="card__items">
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product1.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product5.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product9.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product6.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product6-6.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product9-9.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="third-list" class="tab__list">
+                            <ul class="card__items">
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product9.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product6.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product7.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product8.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product8-8.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product7-7.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="fourth-list" class="tab__list">
+                            <ul class="card__items">
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product10-10.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product8.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product4.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product3.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product3-3.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product4-4.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="fifth-list" class="tab__list">
+                            <ul class="card__items">
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product2.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product1.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product5.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product4.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product4-4.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="card__item">
+                                    <div class="card-content">
+                                        <img src="images/product/product5-5.jpg" alt="">
+                                        <h3 class="price">$65.00</h3>
+                                        <div class="product-name">Easy Polo Black Edition</div>
+                                        <button>
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <a href="#">Add to cart</a>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div load-html="footer.html"></div>
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>

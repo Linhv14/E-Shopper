@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | E-Shopper</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reponsive.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div load-html="header.html"></div>
+
+    <button onclick="topFunction()" id="scrollTop" title="Go to top">
+        <i class="fa fa-angle-up"></i>
+    </button>
+
+    <div class="cart__content">
+        <div class="cart__title-pc">
+            <div class="title">SHOPPING CART</div>
+        </div>
+        <div class="cart__items-pc">
+            <div class="cart__title-pc">
+                <ul class="cart-title">
+                    <li>Image</li>
+                    <li>Name</li>
+                    <li>Price</li>
+                    <li>Quantity</li>
+                    <li>Total</li>
+                    <li>Delete</li>
+                </ul>
+            </div>
+            <div class="cart__item-pc">
+                <ul class="cart__card">
+                    <li class="cart-pic">
+                        <img src="images/product/product1-1.jpg" alt="product">
+                    </li>
+                    <li>Causual With Rem</li>
+                    <li>$94.00</li>
+                    <li class="quantity">
+                        <button class="value-button" id="decrease"
+                            onclick="decreaseValue('first', 'first-n')">–</button>
+                        <input type="number" id="first" value="1" />
+                        <button class="value-button" id="increase"
+                            onclick="increaseValue('first', 'first-n')">+</button>
+                    </li>
+                    <li class="cart-total">$94.00</li>
+                    <li class="cart-del">
+                        <i class="fa fa-times"></i>
+                    </li>
+                </ul>
+                <ul class="cart__card">
+                    <li class="cart-pic">
+                        <img src="images/product/product4.jpg" alt="product">
+                    </li>
+                    <li>Causual With Rem</li>
+                    <li>$94.00</li>
+                    <li class="quantity">
+                        <button class="value-button" id="decrease"
+                            onclick="decreaseValue('second', 'second-n')">–</button>
+                        <input type="number" id="second" value="1" />
+                        <button class="value-button" id="increase"
+                            onclick="increaseValue('second', 'second-n')">+</button>
+                    </li>
+                    <li class="cart-total">$94.00</li>
+                    <li class="cart-del">
+                        <i class="fa fa-times"></i>
+                    </li>
+                </ul>
+                <ul class="cart__card">
+                    <li class="cart-pic">
+                        <img src="images/product/product3.jpg" alt="product">
+                    </li>
+                    <li>Causual With Rem</li>
+                    <li>$94.00</li>
+                    <li class="quantity">
+                        <button class="value-button" id="decrease"
+                            onclick="decreaseValue('third', 'third-n')">–</button>
+                        <input type="number" id="third" value="1" />
+                        <button class="value-button" id="increase"
+                            onclick="increaseValue('third', 'third-n')">+</button>
+                    </li>
+                    <li class="cart-total">$94.00</li>
+                    <li class="cart-del">
+                        <i class="fa fa-times"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cart__title-mb">
+            <div class="title">SHOPPING CART</div>
+        </div>
+        <div class="cart__items-mb">
+            <div class="cart__card">
+                <div class="cart__img">
+                    <img src="images/product/product1-1.jpg" alt="product">
+                </div>
+                <div class="cart__detail">
+                    <ul class="cart__items">
+                        <li class="name-prod">Causual With Rem</li>
+                        <li class="quantity">
+                            <button class="value-button" id="decrease"
+                                onclick="decreaseValue('first', 'first-n')">–</button>
+                            <input type="number" id="first-n" value="1" />
+                            <button class="value-button" id="increase"
+                                onclick="increaseValue('first', 'first-n')">+</button>
+                        </li>
+                        <li class="price-prod">$94.00</li>
+                    </ul>
+                </div>
+                <div class="cart__total">
+                    <div class="cart-del">
+                        <i class="fa fa-times"></i>
+                    </div>
+                    <div class="cart-total">
+                        <p>Total: </p>
+                        <p>$94.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cart__card">
+                <div class="cart__img">
+                    <img src="images/product/product4.jpg" alt="product">
+                </div>
+                <div class="cart__detail">
+                    <ul class="cart__items">
+                        <li class="name-prod">Causual With Rem</li>
+                        <li class="quantity">
+                            <button class="value-button" id="decrease"
+                                onclick="decreaseValue('second', 'second-n')">–</button>
+                            <input type="number" id="second-n" value="1" />
+                            <button class="value-button" id="increase"
+                                onclick="increaseValue('second', 'second-n')">+</button>
+                        </li>
+                        <li class="price-prod">$94.00</li>
+                    </ul>
+                </div>
+                <div class="cart__total">
+                    <div class="cart-del">
+                        <i class="fa fa-times"></i>
+                    </div>
+                    <div class="cart-total">
+                        <p>Total: </p>
+                        <p>$94.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cart__card">
+                <div class="cart__img">
+                    <img src="images/product/product3.jpg" alt="product">
+                </div>
+                <div class="cart__detail">
+                    <ul class="cart__items">
+                        <li class="name-prod">Causual With Rem</li>
+                        <li class="quantity">
+                            <button class="value-button" id="decrease"
+                                onclick="decreaseValue('third', 'third-n')">–</button>
+                            <input type="number" id="third-n" value="1" />
+                            <button class="value-button" id="increase"
+                                onclick="increaseValue('third', 'third-n')">+</button>
+                        </li>
+                        <li class="price-prod">$94.00</li>
+                    </ul>
+                </div>
+                <div class="cart__total">
+                    <div class="cart-del">
+                        <i class="fa fa-times"></i>
+                    </div>
+                    <div class="cart-total">
+                        <p>Total: </p>
+                        <p>$94.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart__bills">
+            <div class="cart__bill-title">
+                <h3>What would you like to do next?</h3>
+                <p>Choose if you have a discount code or reward points you want to use or would like to estimate your
+                    delivery cost.</p>
+            </div>
+            <div class="cart__bill-card">
+                <div class="card__coupon">
+                    <div class="cart__address">
+                        <div class="adress">
+                            <h3>Adress: </h3>
+                            <div class="wrap">
+                                <input type="text" name="adress" id="adress">
+                            </div>
+                        </div>
+                        <div class="phone">
+                            <h3>Phone Number: </h3>
+                            <div class="wrap">
+                                <input type="text" name="phone" id="phone">
+                            </div>
+                        </div>
+                        <div class="country">
+                            <h3>Country: </h3>
+                            <div class="wrap">
+                                <input type="text" name="country" id="country">
+                            </div>
+                        </div>
+                        <div class="coupon">
+                            <h3>Coupon Code: </h3>
+                            <div class="wrap">
+                                <input type="text" name="coupon" id="coupon">
+                            </div>
+                        </div>
+                        <div class="region">
+                            <h3>Region/State: </h3>
+                            <div class="wrap">
+                                <input type="text" name="region" id="region">
+                            </div>
+                        </div>
+                        <div class="zipcode">
+                            <h3>Zip Code: </h3>
+                            <div class="wrap">
+                                <input type="text" name="zipcode" id="zipcode">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__button">
+                        <button>Apply Coupon</button>
+                        <button>Continue</button>
+                    </div>
+                </div>
+                <div class="cart__checkout">
+                    <div class="sub__total item">
+                        <h4>Cart Sub Total</h4>
+                        <h4>$59</h4>
+                    </div>
+                    <div class="eco__tax item">
+                        <h4>Eco Tax</h4>
+                        <h4>$2</h4>
+                    </div>
+                    <div class="shipping__cost item">
+                        <h4>Shipping Cost</h4>
+                        <h4>Free</h4>
+                    </div>
+                    <div class="total item">
+                        <h4>Total</h4>
+                        <h4>$61</h4>
+                    </div>
+                    <div class="cart__button">
+                        <button>Update</button>
+                        <button>Check Out</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div load-html="footer.html"></div>
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>

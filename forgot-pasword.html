@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password | E-Shopper</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reponsive.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div load-html="header.html"></div>
+
+    <button onclick="topFunction()" id="scrollTop" title="Go to top">
+        <i class="fa fa-angle-up"></i>
+    </button>
+
+    <section class="forgot__container">
+        <div class="forgot__wrap">
+            <div class="item__shipping">
+                <img src="images/home/shipping.jpg" alt="shipping">
+            </div>
+            <div class="forgot__content">
+                <p class="sub__title">FORGOT YOUR PASSWORD?</p>
+                <p class="desc">Enter the e-mail address associated with your account. Click submit to have your password e-mailed to you</p>
+                <h3 class="main__title">Your E-Mail Address</h3>
+                <div class="form__forgot">
+                    <label for="input__forgot">E-Mail</label>
+                    <input type="text" id="input__forgot" placeholder="E-Mail Address">
+                </div>
+                <div class="btn__forgot">
+                    <button class="back-btn">Back</button>
+                    <button class="continue-btn">Continue</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div load-html="footer.html"></div>
+    <script>
+        includeHTML();
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | E-Shopper</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reponsive.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div load-html="header.html"></div>
+
+    <button onclick="topFunction()" id="scrollTop" title="Go to top">
+        <i class="fa fa-angle-up"></i>
+    </button>
+
+    <div class="login__content">
+        <div class="login__page">
+            <div class="login__form">
+                <div class="form__title">Login to your account</div>
+                <form action="" method="GET" class="form__wrap">
+                    <input type="email" name="email" placeholder="Email Address">
+                    <input type="password" name="password" placeholder="Password">
+                    <div class="check__box">
+                        <input type="checkbox" name="checkbox" id="login-check">
+                        <label for="login-check">Keep me signed in</label>
+                        <a class="forgot__password" href="forgot-pasword.html">Fogot password?</a>
+                    </div>
+                    <button>Login</button>
+                </form>
+            </div>
+            <div class="linked"><div>OR</div></div>
+            <div class="register__form">
+                <div class="form__title">Register new account</div>
+                <form action="" method="GET" class="form__wrap">
+                    <input type="text" name="name" placeholder="Username">
+                    <input type="email" name="email" placeholder="Email Address">
+                    <input type="password" name="password" placeholder="Password">
+                    <button>Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div load-html="footer.html"></div>
+    <script>
+        includeHTML();
+    </script>
+</body>
+</html>
